@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>João Gabriel - Desenvolvedor Front-end</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  </head>
+  <body class="min-h-screen bg-slate-50 text-slate-800">
+    <!-- Navigation -->
+    <nav
+      id="navbar"
+      class="fixed top-0 w-full z-50 transition-all duration-300 bg-transparent"
+    >
+      <div class="max-w-6xl mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+          <div class="text-2xl font-bold text-slate-800">
+            Front-end Developer<span class="text-blue-600">.</span>
+          </div>
+          <div class="hidden md:flex space-x-8">
+            <button
+              onclick="scrollToSection('home')"
+              class="nav-link hover:text-blue-600 transition-colors duration-300 text-blue-600"
+            >
+              Home
+            </button>
+            <button
+              onclick="scrollToSection('sobre')"
+              class="nav-link hover:text-blue-600 transition-colors duration-300 text-slate-600"
+            >
+              Sobre
+            </button>
+            <button
+              onclick="scrollToSection('projetos')"
+              class="nav-link hover:text-blue-600 transition-colors duration-300 text-slate-600"
+            >
+              Projetos
+            </button>
+            <button
+              onclick="scrollToSection('skills')"
+              class="nav-link hover:text-blue-600 transition-colors duration-300 text-slate-600"
+            >
+              Skills
+            </button>
+            <button
+              onclick="scrollToSection('contato')"
+              class="nav-link hover:text-blue-600 transition-colors duration-300 text-slate-600"
+            >
+              Contato
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="min-h-screen flex items-center justify-center relative"
+    >
+      <div class="max-w-6xl mx-auto px-6 text-center">
+        <div class="mb-8">
+          <div
+            class="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden shadow-2xl border-4 border-white"
+          >
+            <img
+              src="/assets/img/perfil.jpg"
+              alt="Foto João Gabriel"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+        <h1
+          class="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent"
+        >
+          João Gabriel Gonçalves
+        </h1>
+        <p class="text-xl md:text-2xl text-slate-600 mb-8 max-w-3xl mx-auto">
+          Desenvolvedor Front-end especializado em criar produtos e experiências
+          digitais excepcionais
+        </p>
+        <div class="flex justify-center space-x-6 mb-12">
+          <a
+            href="#"
+            class="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300 hover:scale-110 transform"
+          >
+            <i data-lucide="github" class="text-slate-700 w-6 h-6"></i>
+          </a>
+          <a
+            href="#"
+            class="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300 hover:scale-110 transform"
+          >
+            <i data-lucide="linkedin" class="text-slate-700 w-6 h-6"></i>
+          </a>
+          <a
+            href="#"
+            class="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300 hover:scale-110 transform"
+          >
+            <i data-lucide="mail" class="text-slate-700 w-6 h-6"></i>
+          </a>
+        </div>
+        <button
+          onclick="scrollToSection('sobre')"
+          class="animate-bounce p-3 rounded-full bg-white shadow-lg"
+        >
+          <i data-lucide="chevron-down" class="text-slate-600 w-6 h-6"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="py-20 bg-white">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-16">Sobre Mim</h2>
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+              Sou um desenvolvedor front-end apaixonado por criar interfaces de
+              usuário intuitivas e experiências digitais memoráveis. Com mais de
+              2 anos de experiência, especializo-me em React, TypeScript e
+              tecnologias modernas de desenvolvimento web.
+            </p>
+            <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+              Acredito que o design e a funcionalidade devem trabalhar em
+              harmonia para criar produtos que não apenas funcionem bem, mas
+              também inspirem e encantem os usuários.
+            </p>
+            <button
+              class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-300"
+            >
+              Download CV
+            </button>
+          </div>
+          <div class="grid grid-cols-2 gap-6">
+            <div class="bg-slate-50 p-6 rounded-2xl text-center">
+              <i
+                data-lucide="code"
+                class="text-blue-600 mx-auto mb-4 w-8 h-8"
+              ></i>
+              <h3 class="font-semibold mb-2">Clean Code</h3>
+              <p class="text-sm text-slate-600">
+                Código limpo e bem estruturado
+              </p>
+            </div>
+            <div class="bg-slate-50 p-6 rounded-2xl text-center">
+              <i
+                data-lucide="palette"
+                class="text-purple-600 mx-auto mb-4 w-8 h-8"
+              ></i>
+              <h3 class="font-semibold mb-2">UI/UX Design</h3>
+              <p class="text-sm text-slate-600">
+                Interfaces bonitas e funcionais
+              </p>
+            </div>
+            <div class="bg-slate-50 p-6 rounded-2xl text-center">
+              <i
+                data-lucide="smartphone"
+                class="text-green-600 mx-auto mb-4 w-8 h-8"
+              ></i>
+              <h3 class="font-semibold mb-2">Responsive</h3>
+              <p class="text-sm text-slate-600">
+                Design adaptável a todos os dispositivos
+              </p>
+            </div>
+            <div class="bg-slate-50 p-6 rounded-2xl text-center">
+              <i
+                data-lucide="external-link"
+                class="text-orange-600 mx-auto mb-4 w-8 h-8"
+              ></i>
+              <h3 class="font-semibold mb-2">Performance</h3>
+              <p class="text-sm text-slate-600">
+                Aplicações rápidas e otimizadas
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projetos" class="py-20 bg-slate-50">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-16">Projetos</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project 1 -->
+          <div
+            class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 group"
+          >
+            <div class="relative overflow-hidden">
+              <img
+                src="./assets/img/cycletech.jpg"
+                alt="E-commerce CycleTech"
+                class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4"
+              >
+                <div class="flex space-x-3">
+                  <a
+                    href="#"
+                    class="p-2 bg-white/90 rounded-full hover:bg-white transition-colors"
+                  >
+                    <i data-lucide="github" class="w-4 h-4"></i>
+                  </a>
+                  <a
+                    href="https://pkwfjuid.manus.space/"
+                    class="p-2 bg-white/90 rounded-full hover:bg-white transition-colors"
+                  >
+                    <i data-lucide="external-link" class="w-4 h-4"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-3">E-commerce CicleTech</h3>
+              <p class="text-slate-600 mb-4">
+                 E-commerce completo de loja de bicicletas,com carrinho e pagamento.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1 bg-blue-50 text-blue-600 text-sm rounded-full"
+                  >React</span
+                >
+                <span
+                  class="px-3 py-1 bg-blue-50 text-blue-600 text-sm rounded-full"
+                  >TypeScript</span
+                >
+                <span
+                  class="px-3 py-1 bg-blue-50 text-blue-600 text-sm rounded-full"
+                  >Tailwind CSS</span
+                >
+                <span
+                  class="px-3 py-1 bg-blue-50 text-blue-600 text-sm rounded-full"
+                  >Node.js</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div
+            class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 group"
+          >
+            <div class="relative overflow-hidden">
+              <img
+                src="./assets/img/brasilviagens.jpg"
+                alt="Dashboard Analytics"
+                class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4"
+              >
+                <div class="flex space-x-3">
+                  <a
+                    href="#"
+                    class="p-2 bg-white/90 rounded-full hover:bg-white transition-colors"
+                  >
+                    <i data-lucide="github" class="w-4 h-4"></i>
+                  </a>
+                  <a
+                    href="https://iyzqoght.manus.space/"
+                    class="p-2 bg-white/90 rounded-full hover:bg-white transition-colors"
+                  >
+                    <i data-lucide="external-link" class="w-4 h-4"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-3">Agência de Viagens BrasilTur</h3>
+              <p class="text-slate-600 mb-4">
+                Site de agência de viagens com busca de pacotes, reservas e
+                avaliações.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1 bg-blue-50 text-blue-600 text-sm rounded-full"
+                  >React</span
+                >
+                <span
+                  class="px-3 py-1 bg-blue-50 text-blue-600 text-sm rounded-full"
+                  >TypeScript</span
+                >
+                <span
+                  class="px-3 py-1 bg-blue-50 text-blue-600 text-sm rounded-full"
+                  >Tailwind CSS</span
+                >
+                
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div
+            class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 group"
+          >
+            <div class="relative overflow-hidden">
+              <img
+                src="./assets/img/personal.jpg"
+                alt="Personal Trainer App"
+                class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4"
+              >
+                <div class="flex space-x-3">
+                  <a
+                    href="#"
+                    class="p-2 bg-white/90 rounded-full hover:bg-white transition-colors"
+                  >
+                    <i data-lucide="github" class="w-4 h-4"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="p-2 bg-white/90 rounded-full hover:bg-white transition-colors"
+                  >
+                    <i data-lucide="external-link" class="w-4 h-4"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-3">Personal Trainer Landing Page</h3>
+              <p class="text-slate-600 mb-4">
+               Landing Page para personal trainer com venda de pacotes de treinamento, depoimentos e
+                informações de contato.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1 bg-blue-50 text-blue-600 text-sm rounded-full"
+                  >React</span
+                >
+                <span
+                  class="px-3 py-1 bg-blue-50 text-blue-600 text-sm rounded-full"
+                  >Redux</span
+                >
+                <span
+                  class="px-3 py-1 bg-blue-50 text-blue-600 text-sm rounded-full"
+                  >Styled Components</span
+                >
+                <span
+                  class="px-3 py-1 bg-blue-50 text-blue-600 text-sm rounded-full"
+                  >Express</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-white">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-16">Skills</h2>
+        <div
+          id="skills-container"
+          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
+        >
+          <!-- Skills serão gerados dinamicamente -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="py-20 bg-slate-900 text-white">
+      <div class="max-w-6xl mx-auto px-6 text-center">
+        <h2 class="text-4xl font-bold mb-8">Vamos Trabalhar Juntos?</h2>
+        <p class="text-xl text-slate-300 mb-12 max-w-2xl mx-auto">
+          Estou sempre interessado em novos projetos e oportunidades. Entre em
+          contato e vamos criar algo incrível!
+        </p>
+        <div
+          class="flex flex-col sm:flex-row gap-6 justify-center items-center"
+        >
+          <a
+            href="https://wa.me/5553999427224"
+            class="bg-green-600 hover:bg-green-700 px-8 py-3 rounded-lg transition-colors duration-300 flex items-center gap-2"
+          >
+            <i class="fab fa-whatsapp text-white text-xl"></i>
+            Entre em Contato
+          </a>
+          
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-slate-400 py-8">
+      <div class="max-w-6xl mx-auto px-6 text-center">
+        <p>&copy; 2025 João Gabriel Gonçalves. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </body>
+  <script src="./assets/js/main.js"></script>
+</html>

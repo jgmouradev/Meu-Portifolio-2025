@@ -1,0 +1,19 @@
+.bg-clip-text {
+        -webkit-background-clip: text;
+        background-clip: text;
+      }
+      .text-transparent {
+        color: transparent;
+      }
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+      .animate-bounce {
+        animation: bounce 2s infinite;
+      }
